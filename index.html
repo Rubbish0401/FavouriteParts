@@ -1,0 +1,117 @@
+<html>
+
+<head>
+	<!-- Google tag (gtag.js) -->
+	<meta name="google-adsense-account" content="ca-pub-8799987832232140">
+	<!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-BH8QRLY634"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-BH8QRLY634');
+	</script>-->
+
+	<!-- Viewport and Charset -->
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+	<meta charset="utf-8" />
+
+	<!-- External Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+		rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="styles/global-initialisation.css">
+	<link rel="stylesheet" href="styles/index-structure.css">
+	<link rel="stylesheet" href="styles/index-face.css">
+
+	<!-- External Scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+	<!-- Scripts -->
+	<script src="scripts/index-header.js"></script>
+	<script src="scripts/index.js" type="module"></script>
+
+	<!-- Others -->
+	<link rel="icon" href="src/images/svg/fav_white.svg">
+	<title>
+		FavouriteParts
+	</title>
+</head>
+
+<body>
+	<div class="titlebar back">
+		<svg class="titlebar icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+		<span class="titlebar label">
+			FavouriteParts
+		</span>
+	</div>
+
+	<div class="main back">
+		<div id="preview-pane" class="main pane preview-pane"></div>
+
+		<div class="main pane">
+			<div class="main sub-block">
+				<div class="main sub-label">
+					File Info
+				</div>
+				
+				<div class="main sub-row">
+					<label for="input-filename" class="main input-label">
+						Filename
+					</label>
+					<input id="input-filename" class="main input-field" type="text" spellcheck="false" autocomplete="off">
+				</div>
+
+				<div class="main sub-row">
+					<label for="input-width" class="main input-label">
+						Width(px)
+					</label>
+					<input id="input-width" class="main input-field" inputmode="numeric" spellcheck="false" autocomplete="off">
+				</div>
+			</div>
+
+			<div class="main sub-block">
+				<div class="main sub-label">
+					Appearance
+				</div>
+
+				<div class="main sub-row">
+					<label for="input-appearance" class="main input-label">
+						Custom CSS
+					</label>
+					<textarea id="input-appearance" class="main input-field" spellcheck="false" autocomplete="off"></textarea>
+				</div>
+			</div>
+
+			<div class="main sub-block">
+				<div class="main sub-label">
+					Contents
+				</div>
+
+				<div class="main sub-row">
+					<label for="input-name" class="main input-label">
+						Name
+					</label>
+					<input id="input-name" class="main input-field" type="text" spellcheck="false" autocomplete="off">
+				</div>
+
+				<div class="main sub-row">
+					<label for="input-contents" class="main input-label">
+						Contents
+					</label>
+					<textarea id="input-contents" class="main input-field" spellcheck="false" autocomplete="off"></textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="btn-save" class="floating-btn">
+		<img src="src/images/svg/save_white.svg">
+	</div>
+</body>
+
+</html>

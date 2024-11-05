@@ -1,0 +1,44 @@
+/* */
+body{
+	background: hsl(0, 90%, 99%);
+}
+
+.titlebar.back{
+	background: hsl(0, 90%, 90%);
+}
+
+.main.back{
+	
+}
+
+.floating-btn{
+	border-radius: 50%;
+	filter: drop-shadow(4px 4px 4px #00000080);
+}
+
+/* Buttons */
+#btn-save{
+	background: #3F51B5;
+}
+
+/* Title bar */
+.titlebar.icon{
+	fill: hsl(0, 85%, 40%);
+}
+
+.titlebar.label{
+	font-size: 32px;
+	color: hsl(0, 85%, 25%);
+
+	text-align: left;
+	vertical-align: middle;
+}
+/* Main Part */
+.main.sub-label{
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.main.input-field{
+	outline: none;
+}

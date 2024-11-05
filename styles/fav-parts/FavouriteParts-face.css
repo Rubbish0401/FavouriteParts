@@ -1,0 +1,42 @@
+.fav-parts{
+	font-family: "Noto Sans JP", "Times New Open Sans";
+}
+
+.fav-parts.back{
+	border-color: #606870;
+	border-style: solid;
+	background: white;
+}
+
+/**/
+.fav-parts.nametag{
+	text-align: center;
+	font-size: 32px;
+	white-space: nowrap;
+}
+
+/* Row */
+.fav-parts.row.background{
+	background: white;
+	border: 1px solid black;
+}
+
+.fav-parts.row.index{
+	background: blue;
+}
+
+.fav-parts.row.index-frame{
+	border: 2px solid white;
+}
+
+.fav-parts.row.index-label{
+	color: white;
+
+	text-align: center;
+	vertical-align: middle;
+	font-size: 36px;
+}
+
+.fav-parts.row.label{
+	font-size: 36px;
+}
