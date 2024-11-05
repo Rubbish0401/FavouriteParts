@@ -78,4 +78,6 @@
 	height: fit-content;
 
 	padding: 0px 8px;
+
+	white-space: nowrap;
 }
