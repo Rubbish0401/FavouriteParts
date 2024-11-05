@@ -100,13 +100,15 @@ body{
 }
 
 .main.input-field{
-	max-width: 400px;
+	max-width: 600px;
 	width: 100%;
 	height: fit-content;
+	padding: 0px 4px;
 }
 
 textarea.main.input-field{
-	min-height: 200px
+	min-height: 240px;
+	padding: 4px;
 }
 
 /* Preview Pane */
