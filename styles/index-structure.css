@@ -57,6 +57,7 @@ body{
 	height: fit-content;
 
 	padding: 0px 4px;
+	transform: translateY(-2px);
 }
 
 /* Main Part */
