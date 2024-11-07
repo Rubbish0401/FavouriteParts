@@ -67,9 +67,13 @@ body{
 
 	display: block;
 	padding: 16px;
+	
+	overflow-y: auto;
 }
 
 /* Preferences Pane */
+.main.pane.preferences-pane{
+}
 
 .main.sub-block{
 	width: 100%;
@@ -115,7 +119,6 @@ textarea.main.input-field{
 /* Preview Pane */
 .main.pane.preview-pane{
 	padding: 64px 16px;
-	overflow-y: auto;
 }
 
 .main.pane.preview-pane > *{
