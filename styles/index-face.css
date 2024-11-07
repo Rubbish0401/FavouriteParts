@@ -41,4 +41,5 @@ body{
 
 .main.input-field{
 	outline: none;
+	white-space: nowrap;
 }

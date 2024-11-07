@@ -3,9 +3,6 @@
 }
 
 .fav-parts.back{
-	border-color: #606870;
-	border-style: solid;
-	background: white;
 }
 
 /**/
@@ -21,23 +18,20 @@
 	border: 1px solid black;
 }
 
-.fav-parts.row.index{
-	background: blue;
-}
+.fav-parts.index{}
 
-.fav-parts.row.index-frame{
+.fav-parts.index-frame{
 	border: 2px solid white;
 }
 
-.fav-parts.row.index-label{
-	color: white;
-
+.fav-parts.index-label{
 	text-align: center;
 	vertical-align: middle;
 	font-size: 36px;
 	font-weight: bolder;
+
+	background: transparent !important;
 }
 
-.fav-parts.row.label{
-	font-size: 36px;
+.fav-parts.label{
 }

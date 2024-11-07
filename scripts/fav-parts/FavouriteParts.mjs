@@ -35,8 +35,8 @@ export class FavouriteParts {
 		});
 
 		// Classes
-		back.classList.add("fav-parts", "back");
-		nametag.classList.add("fav-parts", "nametag");
+		back.classList.add("fav-parts", "back", "image");
+		nametag.classList.add("fav-parts", "nametag", "font-color");
 		listpane.classList.add("fav-parts", "list-pane");
 
 		// Custom
@@ -101,11 +101,11 @@ function createRow(index, text){
 	let label = document.createElement("div");
 
 	// Classes
-	back.classList.add("fav-parts", "row", "background");
-	indexIcon.classList.add("fav-parts", "row", "index");
-	indexFrame.classList.add("fav-parts", "row", "index-frame");
-	indexLabel.classList.add("fav-parts", "row", "index-label");
-	label.classList.add("fav-parts", "row", "label");
+	back.classList.add("fav-parts", "row", "background", `row-${index}`);
+	indexIcon.classList.add("fav-parts", "index", "number");
+	indexFrame.classList.add("fav-parts", "index-frame");
+	indexLabel.classList.add("fav-parts", "index-label", "number");
+	label.classList.add("fav-parts", "label", `label-${index}`, "font-color");
 
 	// Custom
 	indexLabel.innerText = index;

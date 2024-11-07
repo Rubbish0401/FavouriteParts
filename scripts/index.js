@@ -1,6 +1,8 @@
 import { FavouriteParts } from "./fav-parts/FavouriteParts.mjs";
 import { StringProcess } from "https://rubbish0401.github.io/JavaScriptUtils/StringProcess.mjs";
 
+var defAppe;
+
 document.addEventListener("DOMContentLoaded", function(root_event){
 	favParts = new FavouriteParts();
 
@@ -22,6 +24,8 @@ document.addEventListener("DOMContentLoaded", function(root_event){
 	// Classes
 
 	// Custom
+	
+	// EventListener
 	filenameInput.addEventListener("change", event => { imageFilename = String(event.target.value) });
 	filenameInput.addEventListener("change", event => { if(event.key === "Enter") event.target.dispatchEvent(new InputEvent("change")) });
 
@@ -81,9 +85,17 @@ document.addEventListener("DOMContentLoaded", function(root_event){
 		});
 	});
 
-	// EventListener
-
 	// Append
 	document.body.appendChild(customStyle);
 	previewPane.appendChild(preview);
+
+	// Others
+	fetch("../data/default-appearance.css").then(result => {
+		result.text().then(text => {
+			defAppe = text;
+
+			appearanceInput.value = defAppe;
+			appearanceInput.dispatchEvent(new InputEvent("change"));
+		});
+	});
 });

@@ -1,4 +1,5 @@
-@media screen and (max-width: 540px),
+@media
+ screen and (max-width: 540px),
  screen and (orientation: portrait) {
 	.main.back{
 		display: block;

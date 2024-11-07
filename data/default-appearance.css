@@ -1,0 +1,33 @@
+/*
+	無職透明にするにはbackgroundやcolorをtransparentと指定
+*/
+
+.image{
+	/* 画像の背景 */
+	background: white;
+	
+	/* 画像の枠 */
+	border-width: 16px;
+	border-color: #606870;
+	border-style: solid;
+}
+
+/* 数字アイコンのスタイル */
+.number{
+	background: hsl(240, 90%, 60%);
+	color: white;
+}
+
+/* 数字アイコン以外の文字 */
+.font-color{
+	color: #5F6368;
+}
+
+/* 各項目の文字サイズ */
+.label{
+	font-size: 36px;
+}
+
+/*
+	.label-{index} セレクタで{index}番目の項目だけを変更できる
+*/
