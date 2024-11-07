@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function(root_event){
 	previewPane.appendChild(preview);
 
 	// Others
-	fetch("../data/default-appearance.css").then(result => {
+	fetch("./data/default-appearance.css").then(result => {
 		result.text().then(text => {
 			defAppe = text;
 
