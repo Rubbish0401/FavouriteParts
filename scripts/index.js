@@ -60,13 +60,14 @@ document.addEventListener("DOMContentLoaded", function(root_event){
 			width: preview.offsetWidth,
 			scale: 1,
 			backgroundColor: null,
+			proxy: "https://crossorigin.me/https://google.com",
+			useCORS:true,
 		};
 		if(!isNaN(imageWidth)) options.scale = imageWidth / preview.offsetWidth;
 
 		html2canvas(preview, options).then(canvas => {
 			let anchor = document.createElement("a");
 			anchor.href = canvas.toDataURL();
-			anchor.crossOrigin = "annonymous";
 			if(typeof imageFilename === "string" && imageFilename.length > 0){
 				anchor.download = `${imageFilename}.png`;
 			}else{
